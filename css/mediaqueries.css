@@ -1,0 +1,87 @@
+@media screen and (max-width:600px){
+    .navbar{
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .tittle{
+        justify-content: space-between;
+    }
+    .navbar .shop{
+        display: none;
+    }
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .navbar .menu{
+        display: block;
+    }
+    .img-home{
+        grid-row: 3/7;
+        grid-column: 2/10;
+    }
+    .principal .contenido{
+        grid-row: 3/7;
+        grid-column: 8/10;
+    }
+    .principal h1{
+        font-size: 25px;
+    }
+    .principal p{
+        font-size: 14px;
+    }
+    .principal .boton{
+        font-size: 9px;
+        font-weight: 700;
+        color: yellow;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.616);
+        border: solid 1px yellow;
+        margin: 10%;
+    }
+    .videos{
+        display: block;
+    }
+    .tittle-stats{
+        display: none;
+    }
+    .box-stats{
+            display: none;
+    }
+    .box-contacto{
+        display: block;
+        grid-column: 2/10;
+        grid-row: 2/8;
+    }
+    .contenido3{
+        display: grid;
+        grid-column: 2/10;
+        grid-row: 1/8;
+        margin: 10px;
+    }
+    .imagen-sponsor{
+        width: 150px;
+        height: 150px;
+    }
+    .contenedor{
+        max-width: 280px;
+        width: 900%;
+        margin: 10px;
+        display: grid;
+        grid-column: 2/10;
+        grid-row: 2/8;
+    }
+    .footer{
+        height: 110px;
+    }
+    .footer .seguinos{
+        display: none;
+    }
+
+    .footer .desarrollado{
+        font-size: 15px;
+    }
+}

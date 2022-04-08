@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo/random_logo_by_criticl_d7eqdvw-fullview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap' rel='stylesheet' type='text/css'/>
+    <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
+    <title>hardware argentina - contacto</title>
+</head>
+<body class="bodybackground">
+    <header>
+        <h1 class="tittle">HARDWARE ARGENTINA</h1>
+        <nav class="navbar">
+            <img class="logo" src="../assets/logo/random_logo_by_criticl_d7eqdvw-fullview.png" alt="logoizqarrib">
+            <!--Listas desordenadas-->
+            <ul class="menu"> 
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../pages/productos.html" >Productos </a></li>
+                <li><a href="../pages/sponsors.html"> Sponsors</a></li>
+                <li><a href="../pages/sponsors.html"> Contacto</a></li>
+            </ul>
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="shop">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+    </header>
+    <main class="principal">
+        <div class="box-contacto">
+            <h1>Contactanos</h1>
+        <form action="procesar.php" method="post"> 
+            <fieldset>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="ingresa aca tu nombre">
+            </p>
+            <p>
+                <label for="apellido">apellido:</label>
+                <input type="text" name="apellido" placeholder="ingresa aca tu apellido">
+            </p>
+            <p>
+                <label for="mail">email:</label>
+                <input type="mail" name="pass" placeholder="ingresa aca tu mail">
+            </p>
+            <!--checkbox-->
+            <h4>Tu consulta es por?</h4>
+                <label for="coleccion">discrepancia </label>
+                <input type="checkbox" name="coleccion" value="catarsis">
+                <label for="coleccion">sugerencia</label>
+                <input type="checkbox" name="coleccion" value="oasis">
+                <label for="coleccion">trabajo</label>
+                <input type="checkbox" name="coleccion" value="soleado">
+            <!--radio-->
+                <h4>estado civil</h4>
+                <label for="estadocivi">soltera/o</label>
+                <input type="radio" name="estado civil" value="soltera/o">
+                <label for="estadocivi">casado/a</label>
+                <input type="radio" name="estado civil" value="casado/a">
+            <!--menu desplegable-->
+            <h4>dejame tu comentario</h4>
+                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+            <!--botones-->
+            <p></p>
+                <input type="reset" value="borrar formulario">
+                <input type="button" value="Enviar">
+            </fieldset>
+                </form>
+            </div>
+    </main>
+    <footer  class="footer">
+        <div class="desarrollado"><h4>desarrolado por @emanuelabregu </h4></div>
+        <div class="seguinos"><h4>seguinos en redes sociales</h4></div>
+        <div class="redes-sociales">
+            <i class="fa-brands fa-behance"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </footer>
+</body>
+</html>
