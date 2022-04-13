@@ -1,14 +1,9 @@
 @media screen and (max-width:600px){
-    .navbar{
-        position: relative;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .tittle{
-        justify-content: space-between;
-    }
-    .navbar .shop{
+
+    .imagenes-en-carrousel{
         display: none;
+    }
+
     }
     .navbar .menu-bar{
         display: block;
@@ -16,16 +11,15 @@
         font-size: 30px;
         cursor: pointer;
     }
-    .navbar .menu{
-        display: block;
-    }
+    
+    
     .img-home{
         grid-row: 3/7;
         grid-column: 2/10;
     }
     .principal .contenido{
-        grid-row: 3/7;
-        grid-column: 8/10;
+        grid-row: 2/5;
+        grid-column: 3/7;
     }
     .principal h1{
         font-size: 25px;
@@ -71,10 +65,12 @@
         width: 900%;
         margin: 10px;
         display: grid;
-        grid-column: 2/10;
-        grid-row: 2/8;
+        grid-column: 2/3;
+        grid-row: 2/4;
     }
     .footer{
+        display: grid;
+        grid-row: 1/1;
         height: 110px;
     }
     .footer .seguinos{
@@ -84,4 +80,4 @@
     .footer .desarrollado{
         font-size: 15px;
     }
-}
+
