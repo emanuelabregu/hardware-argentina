@@ -1,59 +1,34 @@
-
-
 /*metodologia BEM*/
 #{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.posiciondecarrusel{
-    display: grid;
-    grid-row: 2/10;
-    grid-column: 3/10;
-    width: 19000px;
-    height: 19000px;
-}
-.contenedor{
-    max-width: 380px;
-    width: 900%;
-    margin: 10px;
-    display: grid;
-    grid-column: 5/10;
-    grid-row: 2/8;
-}
-
 .tarjeta{
 background-color: rgb(226, 105, 58);
     padding: 20px;
-
 }
-
 .tarjeta__miniatura {
     width: 110px;
     height: 200px;
     margin-right: 20px;
 }
-
 .tarjeta__imagen{
     width: 95%;
     border-radius: 20px;
 }
-
 .tarjeta_tutulo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
 }
-
 .tarjeta__enlace{
     color: black;
 }
-
 .tarjeta__parrafo{
     line-height: 20px;
     margin-bottom: 10px;
 }
-
 .boton{
     display: block;
     padding: 12px 25px;
@@ -61,7 +36,6 @@ background-color: rgb(226, 105, 58);
     border-radius: 10px;
     text-decoration: none;
 }
-
 .boton__texto{
     color: rgb(0, 0, 0);
     font-size: 18px;
@@ -92,92 +66,20 @@ background-color: rgb(226, 105, 58);
     width: 150px;
 }
 
-/*.bodybackground{
-    background-color: #e5e7db; /*por si falla la imagen de fondo dejo el color
+.bodybackground{
+    background-color: aqua; /*por si falla la imagen de fondo dejo el color*/
     background-image: url("../assets/img/vecteezy_abstract-blue-fluid-wave-background_.jpg");
 }
-.tittle{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
-    color: rgb(10, 3, 17);
-    width: 1920px;
-    height: 40px;
-    background-image: linear-gradient(to right, red, yellow);
-    margin: auto;
-    padding: 10px 11px 12px 13px;
-    display: flex;
-    justify-content: space-around;
-}*/
-.contenido2 /*.box-stats mas los videos*/{
-    margin: 10PX;
-    padding: 10px;
-    grid-column: 3/10;
-    grid-row: 2/7;
-}
-.contenido2 .VIDEOS{
-    margin: 10PX;
-    padding: 10px;
-    width: 360px;
-    height: 215px;
-    display: inline-flex;
-    justify-content: space-around;
-}
-
-.quienesomos{
-    text-align: left;
-    margin: auto;
-    border: 10px;
-}
-/*
-.navbar{
-    padding: 2px;
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(8,1fr);
-    align-items: center;
-    background-image: linear-gradient(to right, red, yellow);
-}*/
-/*
-.navbar .logo{
-    width: 30px;
-    height: 30px;
-    grid-column: 2/3;
-}
-.navbar .menu{
-    display: flex;
-    justify-content: space-around;
-    grid-column: 3/7;
-}
-.navbar .menu li{
-    list-style: none;
-}
-.navbar .menu a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-.navbar .menu-bar{
-    display: none;
-}
-.navbar .shop{
-    grid-column: 8/9;
-
-}*/
 .principal{
-    max-height: 100%;
+    max-width: 90%;
     height: 900px;
-    background-image: url(../assets/img/vecteezy_abstract-blue-fluid-wave-background_.jpg);
-    background-size: cover;
-    background-position: center;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-auto-rows: repeat(8,1fr);
-}
-.principal .contenido{
-    grid-column: 2/10;
-    grid-row: 1/8;
-    color: rgb(41, 33, 33)
+    grid-template-areas: "bloque1 bloque2 bloque3 bloque4"
+    "bloque1 bloque2 bloque3 bloque4"
+    "bloque1 bloque2 bloque3 bloque4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 2fr 1fr;
 }
 .principal h3{
     font-size: 20px;
@@ -186,7 +88,7 @@ background-color: rgb(226, 105, 58);
 .principal h1{
     font-size: 40px;
     color: rgb(253, 253, 76);
-    text-transform: uppercase;
+
 }
 .principal .p{
     font-weight: 200;
@@ -201,47 +103,57 @@ background-color: rgb(226, 105, 58);
     border-radius: 15px;
     margin-top: 15px;
     cursor: pointer;
+    width: 150px;
+}
+.imagenes-en-carrousel{
+    grid-area: bloque1;
+}
+.principal .contenido{
+    margin-top: 50px;
+    padding: 50px;
+    grid-area: bloque3;
+    color: rgb(41, 33, 33);
+}
+.contenido2 /* productos-videos*/{
+    grid-area: bloque2;
+    
+    margin: 10px;
+    padding: 10px;
+}
+.contenedor/*main sobre nosotros*/{
+    max-width: 380px;
+    width: 900%;
+    margin: 10px;
+    padding: 20px;
+    grid-area: bloque1;
+}
+
+.contenido2 .VIDEOS{
+    margin: 10PX;
+    padding: 10px;
+    width: 360px;
+    height: 215px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.quienesomos{
+    text-align: left;
+    margin: auto;
+    border: 10px;
 }
 .box-contacto{
     display: block;
-    grid-column: 3/10;
-    grid-row: 2/8;
+grid-area: bloque2;
 }
-.contenido3{
-    display: grid;
-    grid-column: 5/10;
-    grid-row: 3/8;
+contenido3 /*soponsors main*/{
+    display: block;
+    grid-area: bloque2;
     margin: 10px;
 }
 .imagen-sponsor{
     width: 450px;
     height: 350px;
-
 }
-/*
-.footer{
-    display: grid;
-    height: 88px;
-    align-items: center;
-    background-color: #808080;
-    color: yellow;
-    grid-template-areas: "desarrollado seguinos redes-sociales";
-}
-.footer .desarrollado{
-    grid-area: desarrollado;
-    display: flex;
-    justify-content: center;
-}
-.footer .seguinos{
-    grid-area: seguinos;
-    display: flex;
-    justify-content: center;
-}
-.footer .redes-sociales{
-    grid-area: redes-sociales;
-    display: flex;
-    justify-content: space-evenly;
-}*/
 .navbar .logo{
     width: 35px;
     height: 35px;
@@ -268,6 +180,5 @@ background-color: rgb(226, 105, 58);
         transform: rotateX(180deg);
         transform: rotateX(360);
     }
-
 }
 

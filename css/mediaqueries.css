@@ -1,35 +1,72 @@
+@media screen and (max-width:1240px){
+
+    .imagenes-en-carrousel{
+        display: none;
+    }
+
+    .principal{
+        max-width: 90%;
+        height: 700px;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: "bloque1  vacio"
+        "bloque1  bloque2"
+        "bloque1  vacio"
+        ;
+        grid-template-columns:  0.5fr 0.5fr;
+        grid-auto-rows: 0.5fr 0.5fr;
+    
+    }
+
+    .principal .contenido{
+        grid-area: bloque1;
+        color: rgb(41, 33, 33);
+        margin: 70px;
+        padding: 70px;
+        grid-template-columns:  0.5fr 0.5fr;
+        grid-auto-rows: 0.5fr 0.5fr;
+        
+    
+    }
+    .contenedor/*main sobre nosotros*/{
+        max-width: 380px;
+        width: 900%;
+        margin: 10px;
+        padding: 20px;
+        grid-area: bloque2;
+    }
+
 @media screen and (max-width:600px){
 
     .imagenes-en-carrousel{
         display: none;
     }
 
+    .principal{
+        max-width: 90%;
+        height: 700px;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: "bloque1  bloque2 "
+        "bloque1  bloque2"        ;
+        grid-template-columns:  0.5fr 0.5fr;
+        grid-auto-rows: 0.5fr 0.5fr;
     }
-    .navbar .menu-bar{
-        display: block;
-        grid-column: 8/9;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    
-    
-    .img-home{
-        grid-row: 3/7;
-        grid-column: 2/10;
-    }
+
     .principal .contenido{
-        grid-row: 2/5;
-        grid-column: 3/7;
+        grid-area: bloque2;
+        color: rgb(41, 33, 33);
+    
     }
     .principal h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .principal p{
-        font-size: 14px;
+        font-size: 18px;
     }
     .principal .boton{
         font-size: 9px;
-        font-weight: 700;
+        width: 700;
         color: yellow;
         text-transform: uppercase;
         background: rgba(0, 0, 0, 0.616);
@@ -39,21 +76,15 @@
     .videos{
         display: block;
     }
-    .tittle-stats{
-        display: none;
-    }
-    .box-stats{
-            display: none;
+
     }
     .box-contacto{
         display: block;
-        grid-column: 2/10;
-        grid-row: 2/8;
+        grid-area: bloque2;
     }
-    .contenido3{
-        display: grid;
-        grid-column: 2/10;
-        grid-row: 1/8;
+    .contenido3 /*soponsors main*/{
+        display: block;
+        grid-area: bloque1;
         margin: 10px;
     }
     .imagen-sponsor{
@@ -61,23 +92,10 @@
         height: 150px;
     }
     .contenedor{
-        max-width: 280px;
-        width: 900%;
+        max-width: 210px;
+        width: 100%;
         margin: 10px;
-        display: grid;
-        grid-column: 2/3;
-        grid-row: 2/4;
-    }
-    .footer{
-        display: grid;
-        grid-row: 1/1;
-        height: 110px;
-    }
-    .footer .seguinos{
-        display: none;
+        grid-area: bloque1;
     }
 
-    .footer .desarrollado{
-        font-size: 15px;
-    }
 
