@@ -6,12 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../hardware-argentina/assets/logo/random_logo_by_criticl_d7eqdvw-fullview.png" type="image/x-icon">
-    
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap' rel='stylesheet' type='text/css'/>
     <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
     <title>Hardware Argentina - Inicio</title>
 </head>
@@ -30,85 +27,117 @@
                         <a class="nav-link active" aria-current="page" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../hardware-argentina/pages/productos.html">Productos</a>
+                        <a class="nav-link" href="./pages/productos.html">Videos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="../hardware-argentina/pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a class="dropdown-item" href="../hardware-argentina/pages/contacto.html">Contacto</a></li>
+                        <li><a class="dropdown-item" href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../hardware-argentina/pages/sponsors.html">Sponsors</a></li>
+                        <li><a class="dropdown-item" href="./pages/sponsors.html">Sponsors</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">proximamente donaciones</a>
+                        <a class="nav-link disabled"></a>
                     </li>
                     </ul>
                     <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="escriba aqui" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn btn-dark" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
-    <main class="principal">
-        <div class="contenido">
-            <h3 class="subtitle">Donde estas:</h3>
-            <h1 >WEB DE REVIEWS</h1>
-            <p>Hardware Argentina Review es el blog más importante de noticias de hardware, análisis, reviews, gaming, periféricos, smartphone, windows, Linux en Español.</p>
-            <a class="boton" href="pages/sobre-nosotros.html"><span class="boton__texto">saber mas</span></a>
-        </div>
-        <div class="imagenes-en-carrousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="assets/img/rx6700.jpg" class="d-block w-200 h-200 m-5 p-5" alt="6700">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/rx6700xt.jpg" class="d-block w-200 h-200 m-5 p-5" alt="6700xt">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/rx 6800.png" class="d-block w-200 h-200 m-5 p-5" alt="6800">
-            </div>
-        </div>
-            <div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <main>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/img/579976-amd-radeon-6000-series-ryzen-logos-1260x709_0.webp" class="d-block w-100" alt="grafica1">
+                </div>
+                
+        
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/img/579976-amd-radeon-6000-series-ryzen-motherboard-1260x709.webp" class="d-block w-100" alt="grafica2">
+                </div>
+        
+        
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/img/1184259_22Q1_ComboXGPHaloGameBundle_1260x709.webp" class="d-block w-100" alt="grafica3">
+                </div>
+        
+        
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
                 </button>
+            </div>    
+
+            <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+                <h1 class="p-3 fs-2 border-top border-3">Una web única para el <span class="text-primary">Analisis de Hardware<span/></h1>
+                    <p class="p-3  fs-4">
+                    <span class="text-primary">Hardware Argentina</span> somos quienes aportamos una cuota de luz al paso previo antes de comprar hardware        
+                    </p>   
+                </section>
+
+                <section class="w-100">
+                    <div class="row w-75 mx-auto" id="servicios-fila-1">       
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                            <img src="./assets/img/rx6700.jpg" alt="grafica1"   width="180" height="160">
+                
+                            <div>
+                                <h3 class="fs-5 mt-4 px-4 pb-1">RX6700</h3>
+                                <p class="px-4">La tarjeta gráfica AMD Radeon™ RX 6700, potenciada con la arquitectura AMD RDNA™ 2 y equipada con 40 potentes unidades de procesamiento mejoradas, la flamante tecnología AMD Infinity Cache </p>
+                            </div>
+                
+                        </div>
+                
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                            <img src="./assets/img/rx6700xt.jpg" alt="grafica2" width="180" height="160">
+                
+                            <div>
+                                <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">RX6700XT</h3>
+                                <p class="px-4">La tarjeta gráfica AMD Radeon™ RX 6700 XT, potenciada con la arquitectura AMD RDNA™ 2 y equipada con 40 potentes unidades de procesamiento mejoradas, la flamante tecnología AMD Infinity Cache y 12 GB de memoria GDDR6 dedicada, está diseñada para alcanzar velocidades de cuadros ultraaltas y jugar en 4K con una potencia arrasadora.</p>
+                            </div>
+                        </div>   
+                    </div>
+                    
+                    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                            <img src="./assets/img/rx 6800.png" alt="grafica3" width="180" height="160">
+                
+                            <div>
+                                <h3 class="fs-5 mt-4 px-4 pb-1">RX6800</h3>
+                                <p class="px-4">La tarjeta gráfica AMD Radeon™ RX 6800, potenciada con la arquitectura AMD RDNA™ 2 y equipada con 60 potentes unidades de procesamiento mejoradas, 128MB de la flamante tecnología AMD Infinity Cache y hasta 16GB de memoria GDDR6 dedicada, está diseñada para alcanzar velocidades de cuadros ultraaltas y jugar en 4K con una calidad deslumbrante.</p>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                            <img src="./assets/img/compragamer_Imganen_general_29008_Placa_de_Video_PowerColor_Radeon_RX_6900_XT_16GB_GDDR6_Red_Devil_4662cf00-grn.jpg" alt="grafica4" width="180" height="160" >
+                
+                            <div>
+                                <h3 class="fs-5 mt-4 px-4 pb-1">RX6900XT</h3>
+                                <p class="px-4">La tarjeta XT gráfica AMD Radeon™ RX 6800 XT, potenciada con la arquitectura AMD RDNA™ 2 y equipada con 80 potentes unidades de procesamiento mejoradas, 128MB de la flamante tecnología AMD Infinity Cache y 16GB de memoria GDDR6 dedicada, está diseñada para alcanzar velocidades de cuadros ultraaltas y jugar en 4K con una calidad deslumbrante.</p>
+                            </div>
+                        </div>   
+                    </div>
+                </section>
+    <main>
+    
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+            <p class="fs-5 px-3  pt-3">Emanuel A. &copy; Todos Los Derechos Reservados 2022</p>
+            <div id="iconos" >
+                <a target=”_blank” href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                <a target=”_blank” href="https://github.com/emanuelabregu"><i class="bi bi-github"></i></a>
+                <a target=”_blank” href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>  
             </div>
-
-    </main>
-
-    <footer>
-        <ul class="nav justify-content-center navbar-dark bg-dark">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"  target=”_blank” href="https://github.com/emanuelabregu">Desarrollador</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" target=”_blank” href="https://www.instagram.com/">Redes sociales</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Gracias por visitarnos</a>
-            </li>
-        </ul>
     </footer>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    -->
 </body>
+
 </html>

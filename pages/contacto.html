@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/logo/random_logo_by_criticl_d7eqdvw-fullview.png" type="image/x-icon">
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/mediaqueries.css">
-    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap' rel='stylesheet' type='text/css'/>
     <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
     <title>hardware argentina - contacto</title>
 </head>
@@ -26,7 +25,7 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        <a class="nav-link" href="../pages/productos.html">Videos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
@@ -38,74 +37,58 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">proximamente donaciones</a>
+                        <a class="nav-link disabled"></a>
                     </li>
                     </ul>
                     <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="escriba aqui" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn btn-dark" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="principal">
-        <div class="box-contacto">
-            <h1>Contactanos</h1>
-        <form action="procesar.php" method="post"> 
-            <fieldset>
-            <p>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="ingresa aca tu nombre">
-            </p>
-            <p>
-                <label for="apellido">apellido:</label>
-                <input type="text" name="apellido" placeholder="ingresa aca tu apellido">
-            </p>
-            <p>
-                <label for="mail">email:</label>
-                <input type="mail" name="pass" placeholder="ingresa aca tu mail">
-            </p>
-            <!--checkbox-->
-            <h4>Tu consulta es por?</h4>
-                <label for="coleccion">discrepancia </label>
-                <input type="checkbox" name="coleccion" value="catarsis">
-                <label for="coleccion">sugerencia</label>
-                <input type="checkbox" name="coleccion" value="oasis">
-                <label for="coleccion">trabajo</label>
-                <input type="checkbox" name="coleccion" value="soleado">
-            <!--radio-->
-                <h4>estado civil</h4>
-                <label for="estadocivi">soltera/o</label>
-                <input type="radio" name="estado civil" value="soltera/o">
-                <label for="estadocivi">casado/a</label>
-                <input type="radio" name="estado civil" value="casado/a">
-            <!--menu desplegable-->
-            <h4>dejame tu comentario</h4>
-                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-            <!--botones-->
-            <p></p>
-                <input type="reset" value="borrar formulario">
-                <input type="button" value="Enviar">
-            </fieldset>
-                </form>
+    <main>
+        <section id="seccion-contacto" class="border-bottom border-secondary border-2">
+            <div class="container  border-top border-primary " style="max-width: 600px" id="contenedor-formulario">
+            <div class="text-center mb-4" id="titulo-formulario">
+                <h2>Contactanos</h2>
+                <p class="fs-5">Contactanos si queres ser parte del equipo o si tenes alguna duda</p>
             </div>
+
+            <form   method="POST" data-netlify="true" action="#">     
+                <div class= "mb-3">           
+                    <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+                </div>
+    
+                <div class="mb-3">            
+                    <input type="input" class="form-control" id="name" name="name" placeholder="Francisco Franco">
+                </div>
+        
+                <div class="mb-3">
+                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+                </div>
+        
+                <div class="mb-3">       
+                    <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+                </div>
+        
+                <div class="mb-3">
+                    <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+                </div>
+            </form>
+            
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <ul class="nav justify-content-center navbar-dark bg-dark">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"  target=”_blank” href="https://github.com/emanuelabregu">Desarrollador</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" target=”_blank” href="https://www.instagram.com/">Redes sociales</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Gracias por visitarnos</a>
-            </li>
-        </ul>
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3">Emanuel A. &copy; Todos Los Derechos Reservados 2022</p>
+        <div id="iconos" >
+            <a target=”_blank” href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+            <a target=”_blank” href="https://github.com/emanuelabregu"><i class="bi bi-github"></i></a>
+            <a target=”_blank” href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>  
+        </div>
     </footer>
     <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
