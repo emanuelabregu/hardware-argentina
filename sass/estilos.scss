@@ -1,10 +1,11 @@
+@import 'variables';
+@import 'operadores';
 
 body{
     overflow-x: hidden;
     font-family: $tipografia-base;
 }
 .bodybackground{
-    background-color: $color-fondo;
     background-image: url("../assets/img/vecteezy_abstract-blue-fluid-wave-background_.jpg");
 }
 /*--------navbar---------*/
@@ -70,11 +71,7 @@ body{
     margin: 0;
 }
 
-#seccion-contacto{
-    background-color: #1b2a4e;
-    min-height: 650px;
-    position: relative;
-}
+
 #contenedor-formulario{
     position: absolute;
     top: 40%;

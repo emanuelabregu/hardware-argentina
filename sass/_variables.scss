@@ -2,3 +2,46 @@ $color-fondo: #1b2a4e;
 $color-fuentes: #3f3f3f;
 $tipografia-base: arial, sans-serif;
 $size-fuentes: 26px; 
+
+/*uso de extend*/
+
+
+.bodybackground{
+    background-color: $color-fondo;
+}
+
+#seccion-contacto {
+    @extend .bodybackground;
+}
+
+/*--------uso de each---------*/
+$arreglo-colores:(
+    gris-1: #ccc,
+    gris-2: #aeaeae,
+    gris-3: #a4a4a4
+);
+@each $color,$valor in $arreglo-colores {
+    .fondo-#{$color}{
+        background-color: $valor;
+    }
+}
+/*--------uso de maps ---------*/
+
+$paleta:(
+    'primario': green,
+    'secundario': blue,
+    'succes':pink
+);
+#contenedor-formulario{
+    background-color: map-get($map: $paleta, $key: 'primario');
+    color: map-get($map: $paleta, $key: 'secundario');
+}
+
+/*--------uso de mixins   ---------*/
+@mixin detallecontacto ($altura-minima,$posicion) {
+    min-height: $altura-minima;
+    position: $posicion;
+}
+#seccion-contacto{
+    @include detallecontacto(650px,relative);
+}
